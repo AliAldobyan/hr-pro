@@ -13,6 +13,7 @@ class Employee:
 
     def __str__(self):
         return "Name: %s, Age: %s, Salary: %s, Working Years: %d" % (self.name, self.age, self.salary, self.get_working_years())
+        
 
 class Manager(Employee):
 
@@ -26,7 +27,7 @@ class Manager(Employee):
 
     def __str__(self):
         return "Name: %s, Age: %s, Salary: %s, Working Years: %d, Bonus: %.5f" % (self.name, self.age, self.salary, self.get_working_years(), self.get_bonus())
-        
+
 def main():
     # main code here
     employees = []
@@ -35,12 +36,12 @@ def main():
 
     print("Welcome to HR Pro 2019")
     while True:
-        
+
         print("Options:")
         print("\t1. Show Employees\n\t2. Show Managers\n\t3. Add An Employee\n\t4. Add A Manager\n\t5. Exit")
         user_input = int(input("\nWhat would you like to do? "))
         print("-----------------")
-       
+
         if user_input == 5:
             break
 
