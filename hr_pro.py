@@ -32,6 +32,7 @@ def main():
     employees = []
     managers = []
 
+
     print("Welcome to HR Pro 2019")
     while True:
         
@@ -40,22 +41,22 @@ def main():
         user_input = input("\nWhat would you like to do? ")
         print("-----------------")
        
-        if user_input == "5":
+        if user_input == 5:
             break
 
-        elif user_input == "1":
+        elif user_input == 1:
             print("Employees\n")
             for e in employees:
                 print(e)
             print("-----------------")
 
-        elif user_input == "2":
+        elif user_input == 2:
             print("Managers\n")
             for m in managers:
                 print(m)
-            print("-----------------")    
+            print("-----------------")
 
-        elif user_input == "3":
+        elif user_input == 3:
             name = input("Name: ")
             age = input("Age: ")
             salary = input("Salary: ")
@@ -64,13 +65,13 @@ def main():
             employees.append(employee)
             print("Employee added succesfully\n")
 
-        elif user_input == "4":
+        elif user_input == 4:
             name = input("Name: ")
             age = input("Age: ")
             salary = input("Salary: ")
             employment_year = input("Employment Year: ")
-            bonus_percentage = input("Bonus Percentage: ")
-            manager = Manager(name,age,salary,employment_year,bonus_percentage)
+            bonus = input("Bonus Percentage: ")
+            manager = Manager(name,age,salary,employment_year,bonus)
             managers.append(manager)
             print("Manager added succesfully\n")
 
