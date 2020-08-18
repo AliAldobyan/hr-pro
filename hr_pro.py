@@ -38,7 +38,7 @@ def main():
         
         print("Options:")
         print("\t1. Show Employees\n\t2. Show Managers\n\t3. Add An Employee\n\t4. Add A Manager\n\t5. Exit")
-        user_input = input("\nWhat would you like to do? ")
+        user_input = int(input("\nWhat would you like to do? "))
         print("-----------------")
        
         if user_input == 5:
